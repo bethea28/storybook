@@ -1,0 +1,22 @@
+{
+  "presets": ["@babel/env", "@babel/react"],
+  "plugins": [
+    "transform-class-properties",
+    "transform-es2015-modules-commonjs",
+    "@babel/plugin-transform-modules-commonjs",
+    "@babel/plugin-transform-classes",
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "@assets": "./assets",
+          "@components": "./src/components",
+          "@docs": "./src/docs",
+          "@styles": "./styles",
+          "@theme": "./components/@enhancers/with-theme"
+        },
+        "extensions": [".web.js", ".js"]
+      }
+    ]
+  ]
+}

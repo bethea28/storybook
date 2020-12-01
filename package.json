@@ -1,0 +1,71 @@
+{
+  "name": "@mls-digital/raven",
+  "version": "1.0.0",
+  "description": "A repository whose sole purpose is to store components that are shared between the systems in the MP8 ecosystem.",
+  "main": "src/index.js",
+  "repository": "git@gitlab.com:majorleaguesoccer/raven.git",
+  "author": "MLS <developers@mlssoccer.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "pretty": "prettier --write ./src/*/*.js",
+    "webpack": "npm run webpack --watch",
+    "dev": "npm run webpack -- --mode development",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "babel-loader": "^8.0.6",
+    "@babel/core": "^7.4.5",
+    "@storybook/html": "^5.1.9",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "eslint": "^6.0.1",
+    "husky": ">=1",
+    "lint-staged": ">=8",
+    "prettier": "1.18.2",
+    "prettier-eslint": "^9.0.0"
+  },
+  "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-classes": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "@babel/plugin-transform-classes": "^7.4.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-react": "^6.24.1",
+    "apollo-boost": "^0.3.1",
+    "apollo-client": "^2.5.1",
+    "@storybook/react": "^5.1.9",
+    "install": "^0.12.2",
+    "npm": "^6.9.0",
+    "cloudinary-react": "^1.1.0",
+    "graphql": "^0.11.0",
+    "graphql-tag": "^2.10.1",
+    "react": "16.8.6",
+    "react-dom": "^16.8.6",
+    "react-apollo": "^2.5.3",
+    "react-twitter-embed": "^2.0.4",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}

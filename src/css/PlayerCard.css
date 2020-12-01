@@ -1,0 +1,15 @@
+.player-card {
+  display: grid;
+  grid-template-columns: calc(100% / 3) calc(100% / 3 * 2);
+  background-color: #DEDEDE;
+  padding: 10px;
+}
+
+.player-card-jersey {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #FFF;
+  border-radius: 25px;
+  padding: 2px 7px;
+}

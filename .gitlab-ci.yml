@@ -1,0 +1,21 @@
+image: node:10
+
+cache:
+  paths:
+  - node_modules/
+
+before_script:
+  - yarn install --silent
+  
+stages:
+  - deploy
+
+pages:
+  stage: deploy
+  script:
+  - yarn build-storybook
+  artifacts:
+    paths:
+    - public
+  only:
+  - master

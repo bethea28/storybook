@@ -1,0 +1,44 @@
+.code {
+  font-family: 'monospace, monospace';
+  line-height: '1.3125em';
+}
+.example {
+  margin-bottom: 'calc(1.5 * 1.3125rem)';
+  /* border: 2px solid; */
+}
+.title {
+  font-size: '1rem';
+}
+.label {
+  background-color: '#ddd';
+  color: '#555';
+  border-radius: '1rem';
+  padding: '0.125rem' '0.5rem';
+  margin-right: '0.5rem';
+}
+.propName {
+  font-weight: 'bold';
+}
+.webLabel {
+  background-color: '#bdebff';
+  color: '#025268';
+}
+.description {
+  margin-top: 'calc(0.5 * 1.3125rem)';
+}
+.renderBox {
+  border-color: '#E6ECF0';
+  border-width: 1;
+  padding: '1.3125rem';
+  margin-top: '1.3125rem';
+}
+.exampleText {
+  color: '#AAB8C2';
+  font-size: '0.8rem';
+  font-weight: 'bold';
+  margin-bottom: 'calc(0.5 * 1.3125rem)';
+  /* textTransform: 'uppercase', */
+}
+.verticalDivider {
+  height: '1rem';
+}
